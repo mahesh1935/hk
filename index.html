@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Site</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harikrishna | Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Static Website</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>About This Site</h2>
-            <p>This is a simple static website deployed using GitHub Pages.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Static Site. All rights reserved.</p>
-    </footer>
-    <script src="assets/js/main.js"></script>
+  <header>
+    <h1>Harikrishna</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to My Portfolio</h2>
+    <p>I'm a B.Tech CSE student passionate about App & Web Development 🚀</p>
+    <button onclick="goToProjects()">View My Work</button>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm <strong>Karike Harikrishna</strong>, a Computer Science student at Guru Nanak Institute of Technical Campus.
+      I love coding, app development, and I aim to start my own tech startup one day.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Harikrishna | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
