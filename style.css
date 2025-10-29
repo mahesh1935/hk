@@ -6,101 +6,84 @@
 }
 
 body {
-  background: #f4f4f9;
-  color: #333;
-  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header */
 header {
-  background: #1a73e8;
-  color: #fff;
+  background-color: #0066ff;
+  color: white;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
 }
 
 header h1 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 nav a {
   color: white;
-  text-decoration: none;
   margin-left: 20px;
+  text-decoration: none;
   font-weight: 500;
 }
 
-nav a:hover,
 nav a.active {
   text-decoration: underline;
 }
 
-/* Hero Section */
-.hero {
-  background: linear-gradient(to right, #1a73e8, #3f51b5);
-  color: #fff;
+/* Main Content */
+main {
+  flex: 1;
+  padding: 2rem;
   text-align: center;
-  padding: 80px 20px;
 }
 
-.hero h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #007bff, #0056d6);
+  color: white;
+  padding: 3rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
 }
 
 .hero button {
-  background: #fff;
-  color: #1a73e8;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.hero button:hover {
-  background: #e0e0e0;
-}
-
-/* Projects */
-#projects .project-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-}
-
-.project-card {
+  margin-top: 1rem;
   background: white;
-  border-radius: 10px;
-  padding: 20px;
-  flex: 1 1 30%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  color: #007bff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-.project-card:hover {
-  transform: scale(1.05);
+/* Projects Section */
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-/* Contact */
-#contact {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-#contact a {
-  color: #1a73e8;
-  text-decoration: none;
+.project {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.2rem;
+  width: 280px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 15px;
-  background: #1a73e8;
+  background-color: #0066ff;
   color: white;
-  font-size: 14px;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto; /* pushes footer to bottom */
 }
